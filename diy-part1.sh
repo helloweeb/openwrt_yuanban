@@ -40,8 +40,8 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 cat feeds.conf.default
 
 # 更新并安装源
-#./scripts/feeds clean
-#./scripts/feeds update -a && ./scripts/feeds install -a
+./scripts/feeds clean
+./scripts/feeds update -a && ./scripts/feeds install -a
 
 
 
@@ -61,10 +61,10 @@ git clone https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passw
 
 # 下载自定义软件
 #svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-clash ../package/luci-app-clash
-svn co https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash ../package/luci-app-openclash
+#svn co https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash ../package/luci-app-openclash
 
 # 替换更新插件
-rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+#rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
 #rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
 #rm -rf package/openwrt-packages/adguardhome && svn co https://github.com/Lienol/openwrt/tree/dev-19.07/package/diy/adguardhome package/openwrt-packages/adguardhome
 #rm -rf package/openwrt-packages/luci-app-adguardhome && svn co https://github.com/kongfl888/luci-app-adguardhome package/openwrt-packages/luci-app-adguardhome
