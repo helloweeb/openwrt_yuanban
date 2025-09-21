@@ -57,7 +57,7 @@ cat feeds.conf.default
 #git clone https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 #git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-smartdns.git package/luci-app-smartdns
 #git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-openclash package/luci-app-openclash
-git clone https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passwall package/luci-app-passwall
+git clone git@github.com:xiaorouji/openwrt-passwall/tree/main/luci-app-passwall package/luci-app-passwall
 
 # 下载自定义软件
 #svn co https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-clash ../package/luci-app-clash
