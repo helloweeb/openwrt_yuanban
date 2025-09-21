@@ -24,21 +24,26 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 # sudo -E apt-get -y install rename
 #ln -s ../../diy ./package/openwrt-packages
 
+# 删除软件包
+#rm -rf ./package/lean/UnblockNeteaseMusic
+#rm -rf ./package/lean/UnblockNeteaseMusic-Go
+#rm -rf ./package/lean/luci-app-unblockmusic
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+
+
 # 更新feeds文件
 #sed -i 's@#src-git helloworld@src-git helloworl#d@g' feeds.conf.default #启用helloworld
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-package' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 #cat feeds.conf.default
 
 # 更新并安装源
 #./scripts/feeds clean
 #./scripts/feeds update -a && ./scripts/feeds install -a
 
-# 删除软件包
-#rm -rf ./package/lean/UnblockNeteaseMusic
-#rm -rf ./package/lean/UnblockNeteaseMusic-Go
-#rm -rf ./package/lean/luci-app-unblockmusic
+
 
 # 添加第三方软件包
 #git clone https://github.com/gbaoye/openwrt-packages package/openwrt-packages
