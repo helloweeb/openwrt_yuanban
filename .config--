@@ -1,4 +1,4 @@
-# This is an empty file, please overwrite it after generating the .config file with the source code
+
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
